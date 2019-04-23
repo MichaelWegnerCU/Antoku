@@ -1,0 +1,283 @@
+street_address | zipcode | zillow_id | Zestimate | Home_type | num_bath | num_bed | home_size
+2893 Springdale Ln, Boulder, CO|80303|13239207|633043|Townhouse|3.5|1|1297
+3000 Broadway #2, Boulder, CO|80304|2099905434|750950|Condominium|1.5|1|1408
+1623 19th St, Boulder, CO|80302|2100231197|1059375|MultiFamily2To4|1.0|4|1600
+1145 Pennsylvania Ave, Boulder, CO|80302|2108237056|655000|Unknown|None|None|None
+3375 Chisholm Trail A304, Boulder, CO|80301|13223169|245647|Condominium|1.0|1|600
+3590 Arthur Ct, Boulder, CO|80304|2098594153|403759|Condominium|1.0|1|550
+3540 Arthur Ct #2, Boulder, CO|80304|2096664306|387768|Condominium|1.0|1|550
+645 Arapahoe Ave, Boulder, CO|80302|13178862|1050096|SingleFamily|1.0|0|1038
+868 17th St, Boulder, CO|80302|13176763|709950|SingleFamily|1.0|1|1200
+851 20th St #2, Boulder, CO|80302|2121254219|640402|MultiFamily2To4|1.0|1|300
+3393 Madison Ave, Boulder, CO|80303|13232942|245848|MultiFamily2To4|1.0|1|636
+3592 Nottingham Ct #4, Boulder, CO|80304|2098594180|386749|Condominium|1.0|1|550
+30 S Boulder Cir, Boulder, CO|80303|248766373|531880|Condominium|1.0|1|637
+1934 18th St, Boulder, CO|80302|2085765852|622761|SingleFamily|1.0|1|410
+3640 Hayden Pl, Boulder, CO|80301|2085317516|637846|SingleFamily|1.0|1|550
+2290 Grove Cir E #1, Boulder, CO|80302|2100231259|398142|Condominium|1.0|1|500
+640 Arapahoe Ave #3, Boulder, CO|80302|2094688879|683635|MultiFamily2To4|1.0|1|628
+3440 Hayden Pl #1, Boulder, CO|80301|2098955922|375798|Condominium|1.0|1|550
+4955 Moorhead Ave APT 13, Boulder, CO|80305|63507171|241761|MultiFamily2To4|1.0|1|484
+298 Arapahoe Ave, Boulder, CO|80302|2134245437|1942679|Condominium|12.0|13|4782
+2711 Mapleton Ave, Boulder, CO|80304|13234440|289182|MultiFamily2To4|1.0|1|400
+3480 Colorado Ave APT D5, Boulder, CO|80303|13238201|238055|MultiFamily2To4|1.0|1|505
+850 W Moorhead Cir #3I, Boulder, CO|80305|61637759|261708|Condominium|1.0|1|621
+2727 Folsom St APT 201, Boulder, CO|80304|13251333|269158|MultiFamily2To4|1.0|0|450
+943 9th St, Boulder, CO|80302|2086541486|730760|SingleFamily|1.0|1|300
+4678 White Rock Cir APT 11, Boulder, CO|80301|59999425|281313|Condominium|1.0|1|669
+3405 Stanford Ave, Boulder, CO|80305|13188608|911950|SingleFamily|3.0|4|1925
+6054 Gunbarrel Ave APT D, Boulder, CO|80301|13239189|325312|MultiFamily2To4|1.0|2|714
+3161 Madison Ave, Boulder, CO|80303|2108626976|315833|Condominium|1.0|1|608
+735 30th St, Boulder, CO|80303|13187411|612580|Townhouse|1.0|2|800
+33 S Boulder Cir APT 321, Boulder, CO|80303|13249610|315147|MultiFamily2To4|1.0|1|736
+1620 Grove St #1, Boulder, CO|80302|2090782440|635623|MultiFamily2To4|1.0|1|486
+645 Manhattan Pl APT 304, Boulder, CO|80303|13232845|272225|MultiFamily2To4|1.0|1|685
+1567 9th St, Boulder, CO|80302|13179979|1267670|SingleFamily|1.0|1|2387
+812 20th St, Boulder, CO|80302|2103510435|647737|MultiFamily2To4|None|0|433
+2200 Canyon Blvd, Boulder, CO|80302|2093154975|626411|MultiFamily2To4|1.0|1|655
+1324 Balsam Ave #3, Boulder, CO|80304|2097888278|682371|MultiFamily2To4|1.0|1|None
+3240 Iris Ave, Boulder, CO|80301|2110251608|627777|MultiFamily2To4|1.0|1|612
+3050 Corona Trail, Boulder, CO|80301|2098114623|351729|Condominium|1.0|1|612
+2845 Broadway #203, Boulder, CO|80304|2102765694|730327|MultiFamily2To4|1.0|2|900
+3035 O'Neal Pkwy, Boulder, CO|80301|2119314948|353019|Condominium|2.0|3|1344
+3009 Madison Ave, Boulder, CO|80303|2101620094|480515|Condominium|1.5|2|1102
+3735 Birchwood Dr, Boulder, CO|80304|13226623|276948|Condominium|1.0|1|592
+907 18th St APT B, Boulder, CO|80302|2100231287|660150|MultiFamily2To4|1.0|1|525
+3055 Corona Trail #204, Boulder, CO|80301|2094724966|653629|MultiFamily2To4|1.0|2|None
+4828 Twin Lakes Rd APT 1, Boulder, CO|80301|13239235|332971|Condominium|2.0|2|961
+2227 Canyon Blvd APT 355B, Boulder, CO|80302|13224913|323751|Condominium|1.0|1|702
+4791 White Rock Cir APT D, Boulder, CO|80301|13234083|320245|Condominium|1.0|2|747
+2650 9th St #203, Boulder, CO|80304|2084875805|689719|MultiFamily2To4|1.0|1|850
+2960 Shadow Creek Dr L103, Boulder, CO|80303|2093718572|444987|Condominium|1.0|1|872
+2900 Shadow Creek Dr APT 302, Boulder, CO|80303|13233503|303153|MultiFamily2To4|1.0|1|608
+5110 Williams Fork Trail APT 209, Boulder, CO|80301|13227595|277651|MultiFamily2To4|2.0|2|924
+961 16th St APT 3, Boulder, CO|80302|59999074|308034|MultiFamily2To4|1.0|1|500
+3460 Madison Ave #12, Boulder, CO|80303|2085196160|613597|MultiFamily2To4|1.0|1|608
+2870 E College Ave UNIT 1, Boulder, CO|80303|88907143|361073|MultiFamily2To4|1.0|1|604
+2890 Shadow Creek Dr E105, Boulder, CO|80303|2102644590|445896|Condominium|1.0|2|850
+6505 Kalua Rd APT 201B, Boulder, CO|80301|13217296|297210|Condominium|1.5|2|923
+5520 Stonewall Pl APT 22, Boulder, CO|80303|13252007|372315|MultiFamily2To4|2.0|2|859
+425 Manhattan Dr, Boulder, CO|80303|13189608|776986|Townhouse|3.5|3|1800
+1010 Adams Cir, Boulder, CO|80303|2105245730|617289|MultiFamily2To4|1.0|1|500
+2301 Pearl St APT 76, Boulder, CO|80302|13239308|316881|Condominium|1.0|1|500
+860 W Moorhead Cir #2L, Boulder, CO|80305|61637791|368345|MultiFamily2To4|2.0|2|759
+3161 Madison Ave APT Q213, Boulder, CO|80303|13234004|372432|Condominium|2.0|2|1102
+1077 Laramie Blvd UNIT B, Boulder, CO|80304|59986495|383990|MultiFamily2To4|1.0|1|690
+500 Manhattan Dr, Boulder, CO|80303|2112246220|455428|Condominium|2.0|2|1118
+3525 28th St APT 104, Boulder, CO|80301|13235987|314995|Condominium|2.0|2|830
+4895 Twin Lakes Rd APT 1, Boulder, CO|80301|13239234|359976|MultiFamily2To4|2.0|2|961
+1578 Bradley Dr, Boulder, CO|80305|2106976251|587760|SingleFamily|1.0|2|840
+1535 Pine St, Boulder, CO|80302|2085024809|619929|Townhouse|1.5|2|None
+701 Arapahoe Ave, Boulder, CO|80302|123602714|8171493|MultiFamily2To4|1.0|2|775
+1800 Pearl St #6, Boulder, CO|80302|2095879625|649667|MultiFamily2To4|1.0|2|700
+4525 13th St #4B, Boulder, CO|80304|92356485|415406|Condominium|1.0|1|639
+2802 Sundown Ln J312, Boulder, CO|80303|13242922|520149|Condominium|1.0|2|1267
+1160 Monroe Dr APT C, Boulder, CO|80303|13216781|428376|Townhouse|2.0|2|1050
+1120 Monroe Dr APT D, Boulder, CO|80303|13216750|431733|Condominium|1.0|2|968
+7475 Singing Hills Dr, Boulder, CO|80301|13252858|317620|MultiFamily2To4|2.0|2|975
+3132 Folsom St #3132, Boulder, CO|80304|2084904273|613086|MultiFamily2To4|1.0|2|700
+1544 9th St B, Boulder, CO|80302|2093947927|673643|MultiFamily2To4|1.0|1|400
+3025 Broadway APT 6, Boulder, CO|80304|13239011|471327|MultiFamily2To4|2.0|2|913
+1557 9th St, Boulder, CO|80302|2096471272|847734|MultiFamily2To4|2.0|3|838
+1850 Folsom St, Boulder, CO|80302|2103784360|714197|MultiFamily2To4|2.0|2|1364
+4767 Tantra Dr #1, Boulder, CO|80305|2084893786|635244|MultiFamily2To4|1.0|2|None
+2662 Sherwood Cir, Boulder, CO|80304|2101112951|484585|Townhouse|2.0|2|1000
+3100 Carbon Pl, Boulder, CO|80301|67150222|403138|Condominium|1.0|1|951
+3545 28th St, Boulder, CO|80301|13236693|270337|Condominium|1.0|1|595
+947 Laramie Blvd, Boulder, CO|80304|61637661|456025|Townhouse|3.0|2|1150
+2905 Shadow Creek Dr C202, Boulder, CO|80303|13233203|402527|Condominium|2.0|2|853
+2459 20th St, Boulder, CO|80304|13182432|793950|SingleFamily|1.0|2|900
+615 Walden Cir #203, Boulder, CO|80305|2093197896|471719|Townhouse|2.0|2|1100
+4775 W Moorhead Cir, Boulder, CO|80305|13224189|432913|Townhouse|1.0|2|892
+634 Walden Cir, Boulder, CO|80305|2085322983|463394|Townhouse|2.0|2|1080
+912 Marine St, Boulder, CO|80302|13182131|922270|SingleFamily|1.0|2|850
+760 W Moorhead Cir APT E, Boulder, CO|80305|61637696|421160|Townhouse|2.0|2|1040
+2462 9th St, Boulder, CO|80304|2089095532|741244|SingleFamily|1.0|2|920
+540 Mohawk Dr, Boulder, CO|80303|81881928|435203|Condominium|2.0|1|945
+2227 Canyon Blvd #304A, Boulder, CO|80302|13224863|359576|MultiFamily2To4|1.0|2|923
+1001 Laramie Blvd UNIT I, Boulder, CO|80304|61633005|505914|Condominium|3.0|2|1250
+4500 Baseline Rd, Boulder, CO|80303|109686356|200565|Condominium|2.0|2|1094
+1530 Pine St #3, Boulder, CO|80302|2096268019|424299|Townhouse|1.0|1|560
+693 Walden Cir, Boulder, CO|80305|2092766024|469654|Townhouse|2.0|2|1080
+2227 Canyon Blvd #262B, Boulder, CO|80302|13224907|405498|MultiFamily2To4|2.0|2|1059
+3790 Colorado Ave APT D, Boulder, CO|80303|13258385|485356|Townhouse|1.0|2|1062
+843 Marine St, Boulder, CO|80302|2128169789|728354|SingleFamily|1.0|2|600
+3129 Bell Dr, Boulder, CO|80301|13235566|495305|SingleFamily|2.5|3|1500
+2797 Northbrook Pl, Boulder, CO|80304|13226576|451601|Townhouse|1.0|2|1088
+350 Arapahoe Ave APT 14, Boulder, CO|80302|13215835|141489|MultiFamily2To4|1.5|2|850
+4580 Broadway UNIT 226, Boulder, CO|80304|63896787|699106|Condominium|2.0|2|1419
+3701 Arapahoe Ave UNIT 315, Boulder, CO|80303|87807720|454525|MultiFamily2To4|1.0|1|802
+3025 Moorhead Ave, Boulder, CO|80305|13178235|600356|SingleFamily|1.5|3|960
+550 Mohawk Dr APT 57, Boulder, CO|80303|50945609|464139|MultiFamily2To4|2.0|2|1111
+2944 Glenwood Dr, Boulder, CO|80301|13217559|509863|Townhouse|2.5|2|1530
+830 20th St APT 301, Boulder, CO|80302|13227264|376982|Condominium|1.0|2|868
+3300 Bridger Trail #202, Boulder, CO|80301|2100231213|613142|MultiFamily2To4|2.0|3|1250
+315 Martin Dr, Boulder, CO|80305|13186251|648410|SingleFamily|1.5|4|1326
+1528 Mapleton Ave, Boulder, CO|80304|13181782|1795051|SingleFamily|2.5|6|1815
+1801 23rd St, Boulder, CO|80302|59999366|507124|Townhouse|1.5|2|800
+2230 Spruce St APT B, Boulder, CO|80302|13237705|413493|MultiFamily2To4|1.0|1|786
+935 Grandview Ave #2, Boulder, CO|80302|2091146863|742957|MultiFamily2To4|1.0|2|1200
+4832 Baldwin Pl, Boulder, CO|80301|13231472|562048|SingleFamily|2.0|2|1100
+964 Arapahoe Ave APT 1, Boulder, CO|80302|71347125|486743|Condominium|1.0|2|734
+4989 Eisenhower Dr, Boulder, CO|80303|13220000|270525|SingleFamily|1.0|1|576
+4465 Comanche Dr #3, Boulder, CO|80303|2112261132|739306|MultiFamily2To4|2.0|3|1500
+3118 Bell Dr, Boulder, CO|80301|13235587|512204|Townhouse|2.5|3|1338
+4914 Carter Ct, Boulder, CO|80301|13199315|539480|SingleFamily|2.5|3|1653
+2113 Walnut St B6, Boulder, CO|80302|2085081379|404543|Townhouse|1.0|1|450
+3145 Denton Ave, Boulder, CO|80303|13183765|590790|SingleFamily|1.5|3|912
+740 39th St, Boulder, CO|80303|13185174|618451|SingleFamily|1.0|3|1250
+245 S 38th St, Boulder, CO|80305|13186072|683719|SingleFamily|1.5|3|1040
+425 S 38th St, Boulder, CO|80305|13184466|712534|SingleFamily|2.0|4|2500
+5588 Pennsylvania Ave, Boulder, CO|80303|13219892|578030|SingleFamily|1.5|3|1140
+955 35th St, Boulder, CO|80303|13185257|586858|SingleFamily|1.5|3|924
+760 Walnut St APT A, Boulder, CO|80302|2125387495|532661|Townhouse|1.0|1|850
+2039 11th St, Boulder, CO|80302|2103360574|533359|MultiFamily2To4|1.0|1|710
+3147 Bell Dr, Boulder, CO|80301|13235575|507217|SingleFamily|2.5|3|1133
+4658 Ingram Ct, Boulder, CO|80305|13185570|646564|SingleFamily|1.5|3|1426
+4390 Laguna Pl, Boulder, CO|80303|2092241383|459918|Condominium|2.0|3|1100
+3000 Colorado Ave E117, Boulder, CO|80303|2101533825|647876|MultiFamily2To4|2.0|3|1000
+5070 Ralston St, Boulder, CO|80304|2101342890|634140|SingleFamily|2.0|2|949
+1070 9th St, Boulder, CO|80302|13176357|765288|SingleFamily|1.0|2|1246
+1245 Edinboro Dr, Boulder, CO|80305|13183818|796268|SingleFamily|2.0|3|1462
+800 W Moorhead Cir APT A, Boulder, CO|80305|61637710|535097|MultiFamily2To4|2.0|3|1334
+768 17th St APT A, Boulder, CO|80302|2103825895|947366|MultiFamily2To4|1.0|3|1400
+515 Manhattan Dr APT 202, Boulder, CO|80303|13238342|485555|Condominium|2.0|3|1312
+5594 Pennsylvania Ave #6C, Boulder, CO|80303|13219897|565669|MultiFamily2To4|2.0|3|1140
+3821 Apache Ct W, Boulder, CO|80303|13217112|667928|SingleFamily|2.5|3|2400
+5646 Pennsylvania Ave, Boulder, CO|80303|13242144|759068|SingleFamily|2.5|3|2180
+2501 Bluff St APT 2, Boulder, CO|80304|54988114|752369|MultiFamily2To4|1.5|3|1300
+520 Mohawk Dr APT 98, Boulder, CO|80303|54989975|595579|MultiFamily2To4|3.0|3|1656
+2548 Mapleton Ave, Boulder, CO|80304|13179522|873036|SingleFamily|1.0|2|1205
+3575 19th St, Boulder, CO|80304|13180968|731944|SingleFamily|1.5|2|1339
+830 Mohawk Dr, Boulder, CO|80303|13188304|651367|SingleFamily|2.0|3|1300
+1570 Greenbriar Blvd, Boulder, CO|80305|13184223|661596|Townhouse|3.5|4|2700
+205 S 39th St, Boulder, CO|80305|13183927|593943|SingleFamily|2.0|3|1152
+2852 Kalmia Ave, Boulder, CO|80301|2107360522|649454|MultiFamily2To4|1.0|1|730
+4987 Noble Park Pl, Boulder, CO|80301|13259956|584149|Townhouse|2.5|3|1300
+2865 Baseline Rd, Boulder, CO|80303|2114834614|616052|MultiFamily2To4|1.0|1|570
+3820 Colorado Ave APT H, Boulder, CO|80303|13258355|636032|Townhouse|3.0|3|1532
+3910 Colorado Ave, Boulder, CO|80303|2105302126|544376|Townhouse|2.5|3|1800
+1976 Beacon Ct, Boulder, CO|80302|13226375|777024|SingleFamily|2.0|2|1168
+4580 Broadway UNIT 224, Boulder, CO|80304|63896786|695422|MultiFamily2To4|2.0|2|1392
+2603 Tumwater Ln, Boulder, CO|80304|13258936|710254|SingleFamily|2.0|3|1236
+854 Walnut St APT D, Boulder, CO|80302|13239519|584953|Condominium|2.0|2|1004
+2321 Grove St #2, Boulder, CO|80302|2096391482|657909|MultiFamily2To4|1.5|3|1072
+1519 Pine St APT 4, Boulder, CO|80302|13229162|730925|MultiFamily2To4|1.5|3|1350
+4515 Martin Dr, Boulder, CO|80305|13185956|658506|SingleFamily|2.0|3|1554
+3276 Sentinel Dr, Boulder, CO|80301|13231484|620274|SingleFamily|3.0|3|2080
+56 Mineola Ct, Boulder, CO|80303|13238013|625892|SingleFamily|2.0|4|1896
+1715 Baseline Rd, Boulder, CO|80302|2099203809|807412|MultiFamily2To4|1.0|3|1017
+2512 Mapleton Ave, Boulder, CO|80304|13176378|1031469|MultiFamily2To4|2.0|3|1200
+701 31st St, Boulder, CO|80303|13185233|626388|SingleFamily|1.5|3|1354
+3000 Colorado Ave #119E, Boulder, CO|80303|13233250|421745|MultiFamily2To4|1.5|3|1343
+2244 Spruce St APT C, Boulder, CO|80302|13237697|726341|MultiFamily2To4|2.0|2|1108
+4547 Wellington Rd, Boulder, CO|80301|13224331|595796|SingleFamily|3.5|3|2260
+3030 Birch Ave, Boulder, CO|80305|13178971|653966|SingleFamily|2.0|3|1540
+2921 11th St, Boulder, CO|80304|13180057|902432|SingleFamily|1.5|3|1500
+2409 Vineyard Pl, Boulder, CO|80304|13247707|857751|SingleFamily|2.0|4|2326
+824 Walnut St, Boulder, CO|80302|2101651535|626142|Condominium|2.0|2|1004
+325 Bates Ave, Boulder, CO|80305|13176613|856310|SingleFamily|3.0|4|2724
+635 Walnut St, Boulder, CO|80302|13231341|535878|Condominium|2.0|2|1028
+750 S 41st St, Boulder, CO|80305|13184515|694609|SingleFamily|2.0|3|1426
+3845 Northbrook Dr APT F, Boulder, CO|80304|2110334392|532606|Condominium|3.0|2|1600
+1922 22nd St, Boulder, CO|80302|2086167020|757875|Townhouse|2.0|3|None
+921 Teller Cir, Boulder, CO|80303|13183820|649539|SingleFamily|2.0|4|1800
+2140 Walnut St, Boulder, CO|80302|13259888|896424|SingleFamily|2.0|3|1100
+3837 Paseo del Prado, Boulder, CO|80301|2087497882|562688|Townhouse|2.0|3|2024
+3301 Arapahoe Ave, Boulder, CO|80303|2091835536|529384|Condominium|2.0|2|1299
+2851 20th St, Boulder, CO|80304|13182568|851959|SingleFamily|1.5|3|2000
+380 32nd St, Boulder, CO|80305|13184667|664747|SingleFamily|1.0|3|1862
+2010 Oak Ave, Boulder, CO|80304|13220075|800332|SingleFamily|3.0|4|1980
+5873 S Orchard Creek Cir, Boulder, CO|80301|13245633|756492|SingleFamily|4.0|4|3100
+215 Fox Dr, Boulder, CO|80303|13189339|611231|Townhouse|3.0|3|2250
+2676 Juniper Ave, Boulder, CO|80304|2139492402|495730|Townhouse|1.5|2|1200
+790 Walnut St APT D, Boulder, CO|80302|13240648|642372|Condominium|1.0|3|1150
+4080 Aurora Ave, Boulder, CO|80303|13187280|727598|SingleFamily|2.0|4|1640
+4025 Evans Dr, Boulder, CO|80303|13186860|693423|SingleFamily|2.0|4|1700
+535 Manhattan Dr, Boulder, CO|80303|2102464282|576406|Condominium|3.0|4|2241
+2155 S Walnut St, Boulder, CO|80302|13180174|702346|Townhouse|2.0|4|1608
+4497 Wellington Rd, Boulder, CO|80301|13239219|600738|SingleFamily|3.5|4|2192
+4632 Starboard Dr, Boulder, CO|80301|13221465|686853|SingleFamily|3.5|4|2789
+3310 Everett Dr, Boulder, CO|80305|13186601|826295|SingleFamily|2.0|3|2392
+2727 Folsom St APT 310, Boulder, CO|80304|13251375|293668|MultiFamily2To4|1.0|1|570
+3635 Aspen Ct, Boulder, CO|80304|13183188|839449|SingleFamily|2.0|4|2000
+3754 Davidson Pl, Boulder, CO|80305|13185215|727082|SingleFamily|3.0|4|2214
+790 Walnut St APT B, Boulder, CO|80302|13240646|616862|MultiFamily2To4|1.0|3|1000
+1280 N Cedar Brook Rd, Boulder, CO|80304|2088027434|880199|SingleFamily|2.0|3|2100
+850 38th St, Boulder, CO|80303|13185222|641050|SingleFamily|2.0|4|1350
+1714 Mariposa Ave, Boulder, CO|80302|13180018|1051935|SingleFamily|2.0|2|1842
+4691 Ingram Ct, Boulder, CO|80305|13187816|762528|SingleFamily|2.0|4|2214
+2370 Folsom St APT B, Boulder, CO|80304|13180913|537874|Townhouse|2.0|4|1044
+525 Manhattan Dr APT 101, Boulder, CO|80303|13230650|513564|MultiFamily2To4|3.0|4|2242
+1638 Grove St B, Boulder, CO|80302|2086689925|941087|MultiFamily2To4|2.0|3|3159
+890 9th St, Boulder, CO|80302|13181586|946871|SingleFamily|2.0|3|1412
+3440 23rd St, Boulder, CO|80304|13252715|796240|SingleFamily|3.0|4|2288
+4744 Essex Ct, Boulder, CO|80301|13199434|612868|SingleFamily|3.5|4|2089
+85 Huron Ct, Boulder, CO|80303|13238034|707228|SingleFamily|2.5|3|2131
+4326 Clay Commons Ct, Boulder, CO|80303|13261323|742762|Townhouse|2.5|3|2740
+1265 Claremont Dr, Boulder, CO|80305|13185122|822073|SingleFamily|2.5|3|2268
+1528 Harrison Ave, Boulder, CO|80303|13220450|680617|Townhouse|3.5|4|2446
+4472 Hamilton Ct, Boulder, CO|80305|13188108|744551|SingleFamily|2.0|4|2260
+3395 Moorhead Ave, Boulder, CO|80305|13187622|594233|SingleFamily|2.0|4|896
+855 Grant Pl, Boulder, CO|80302|13178787|1764705|SingleFamily|3.0|4|2400
+1730 Bluff St, Boulder, CO|80304|13181250|1586355|SingleFamily|1.5|2|1340
+2900 19th St, Boulder, CO|80304|13183264|774913|SingleFamily|1.5|3|1232
+1280 Linden Ave, Boulder, CO|80304|13179851|910745|SingleFamily|3.0|5|2408
+653 Furman Way, Boulder, CO|80305|13183764|1256097|SingleFamily|2.5|4|2000
+2856 Maya Pl, Boulder, CO|80301|13194697|738440|SingleFamily|3.0|3|2800
+4285 Corriente Pl, Boulder, CO|80301|81882001|738961|SingleFamily|3.5|4|2175
+2800 Aurora Ave UNIT 119, Boulder, CO|80303|63507130|677030|MultiFamily2To4|2.5|3|1440
+2447 6th St, Boulder, CO|80304|13179235|1035681|Townhouse|1.0|2|1100
+6826 Bugle Ct, Boulder, CO|80301|13229886|752373|SingleFamily|3.0|5|3063
+1475 Oak Pl, Boulder, CO|80304|13230223|1232563|SingleFamily|3.0|4|2587
+760 31st St, Boulder, CO|80303|13187231|623981|SingleFamily|1.0|4|1323
+525 Hartford Dr, Boulder, CO|80305|13188741|810704|SingleFamily|1.5|4|1780
+1946 Beacon Ct, Boulder, CO|80302|13226381|1174459|SingleFamily|1.5|2|2150
+2036 4th St, Boulder, CO|80302|13179958|1200551|SingleFamily|2.0|3|1536
+940 S Lashley Ln, Boulder, CO|80305|13186768|679679|SingleFamily|2.0|5|2160
+1845 17th St APT B, Boulder, CO|80302|2106962646|750078|Condominium|2.0|4|1148
+119 Huron Ct, Boulder, CO|80303|13237982|733610|SingleFamily|4.0|4|2086
+2625 Tabriz Pl D12, Boulder, CO|80304|2089574706|509224|Townhouse|1.0|3|1097
+2090 Grape Ave, Boulder, CO|80304|13182272|1309830|SingleFamily|3.0|4|2744
+5584 Stonewall Pl, Boulder, CO|80303|13237904|810047|SingleFamily|3.5|5|3100
+3851 Paseo del Prado, Boulder, CO|80301|13226782|633861|Townhouse|4.0|4|2121
+1020 Maxwell Ave, Boulder, CO|80304|2112677072|680209|MultiFamily2To4|1.0|2|800
+2010 18th St, Boulder, CO|80302|59999222|906439|Townhouse|1.5|2|1300
+3827 26th St #1, Boulder, CO|80304|2089843904|679338|Condominium|2.5|4|None
+5440 Baseline Rd, Boulder, CO|80303|72297662|916183|SingleFamily|3.5|3|2618
+940 S 46th St, Boulder, CO|80305|13186767|811381|SingleFamily|2.0|6|2142
+1155 Timber Ln, Boulder, CO|80304|13196954|1137569|SingleFamily|2.5|3|3145
+181 Pawnee Dr, Boulder, CO|80303|13188930|967383|SingleFamily|3.0|4|3326
+2949 Broadway, Boulder, CO|80304|13182443|1207886|SingleFamily|1.0|2|1204
+5337 Gunbarrel Center Court #9203, Boulder, CO|80301|2091624030|611256|MultiFamily2To4|2.5|2|1199
+3858 Campo Ct, Boulder, CO|80301|13239777|860774|SingleFamily|2.5|4|2650
+4867 10th St, Boulder, CO|80304|13250760|900611|SingleFamily|3.5|4|2538
+946 Poplar Pl, Boulder, CO|80304|13257064|1074005|SingleFamily|3.5|4|2788
+2273 Spruce St, Boulder, CO|80302|13176488|767501|SingleFamily|2.0|4|1800
+3625 Moorhead Ave, Boulder, CO|80305|13188470|668315|SingleFamily|2.0|5|2200
+1528 Oak Ave, Boulder, CO|80304|13236549|1081155|SingleFamily|3.5|4|2800
+2450 8th St, Boulder, CO|80304|2102295436|1121083|SingleFamily|3.5|3|1725
+2020 Goss St, Boulder, CO|80302|13177441|921633|SingleFamily|2.0|4|1280
+685 Utica Ave, Boulder, CO|80304|13231397|1243640|SingleFamily|3.0|4|2500
+5592 Stonewall Pl, Boulder, CO|80303|13237900|762031|SingleFamily|4.0|4|2741
+815 Maxwell Ave APT 1, Boulder, CO|80304|13176414|747669|Townhouse|2.0|3|1775
+832 Cherryvale Rd, Boulder, CO|80303|13197809|1209374|SingleFamily|3.5|5|2662
+2252 Columbine Ave, Boulder, CO|80302|13183318|869020|SingleFamily|2.0|4|1800
+820 Racquet Ln, Boulder, CO|80303|13223027|958729|SingleFamily|3.0|4|2449
+2015 21st St UNIT B, Boulder, CO|80302|124224273|996432|Townhouse|2.5|3|1379
+1823 Canyon Blvd, Boulder, CO|80302|2100007136|1247277|SingleFamily|2.0|4|1900
+916 14th St, Boulder, CO|80302|13177556|1201890|SingleFamily|2.0|4|1858
+1529 Arapahoe Ave APT A, Boulder, CO|80302|2085827486|862439|MultiFamily2To4|2.0|5|None
+3973 Bosque Ct, Boulder, CO|80301|13237052|697516|SingleFamily|3.0|4|2100
+4745 Tanglewood Trail, Boulder, CO|80301|13200119|1533120|SingleFamily|4.0|4|3050
+2203 Holyoke Dr, Boulder, CO|80305|13184575|1551070|SingleFamily|2.5|3|2517
+1913 Arapahoe Ave, Boulder, CO|80302|13176465|817189|MultiFamily2To4|2.0|4|1900
+2120 Mapleton Ave, Boulder, CO|80304|13179174|1142649|SingleFamily|2.0|3|1680
+3518 Kirkwood Pl, Boulder, CO|80304|13177473|1490143|SingleFamily|3.0|6|3388
+2030 20th St, Boulder, CO|80302|2085687142|1023201|MultiFamily2To4|2.0|2|1600
+2025 16th St, Boulder, CO|80302|109687004|838523|SingleFamily|2.0|2|1300
+5352 Gallatin Pl, Boulder, CO|80303|13222523|937869|SingleFamily|3.0|5|3382
+4137 Guadeloupe St, Boulder, CO|80301|13250885|984000|SingleFamily|2.5|4|2600
+5146 5th St, Boulder, CO|80304|71346533|1155083|SingleFamily|3.5|3|3000
+802 Pine St, Boulder, CO|80302|13181829|1809871|SingleFamily|3.0|3|2100
+1837 Mapleton Ave, Boulder, CO|80304|13179073|1745773|SingleFamily|3.0|4|2800

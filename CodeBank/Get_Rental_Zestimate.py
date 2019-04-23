@@ -12,7 +12,7 @@ zillow_data = ZillowWrapper(zws_id)
 def get_rent_zest(address,zip):
 	deep_search_response = zillow_data.get_deep_search_results(address,zipcode)
 	result = GetDeepSearchResults(deep_search_response)
-
+	print(result.zestimate_amount)
 	zpid=result.zillow_id
 	rentzestimate=True
 	# defining a params dict for the parameters to be sent to the API 
@@ -20,10 +20,8 @@ def get_rent_zest(address,zip):
 	# api-endpoint 
 	URL = "http://www.zillow.com/webservice/GetZestimate.htm"
 
-	rentzestimate=True
-
 	r = requests.get(url = URL, params = PARAMS) 
-	#print(r.content)
+	print(r.content)
 
 	data = r.content.decode('utf-8')
 	xmltodict_data = xmltodict.parse(data)
