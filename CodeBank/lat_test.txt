@@ -1,0 +1,3 @@
+street_address | zipcode | zillow_id | Zestimate | Home_type | num_bath | num_bed | home_size2893 Springdale Ln, Boulder, CO|80303|13239207|631232|Townhouse|3.5|1|1297|40.009373|-105.255454
+3000 Broadway #2, Boulder, CO|80304|2099905434|739052|Condominium|1.5|1|1408|40.029218|-105.281083
+1623 19th St, Boulder, CO|80302|2097817930|665080|MultiFamily2To4|1.0|2|800|40.015852|-105.27058
