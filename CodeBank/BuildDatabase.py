@@ -11,12 +11,12 @@ data_base.write(write_out)
 for line in f_name:
 	line=line.rstrip("\n")
 	address=line
-	street_address=re.search("(.*?)(?<=CO)",address)
-	street_address=street_address.group(0)
-	zipcode=re.search("(?<=CO )(.*?)(?=,)", address)
-	zipcode=zipcode.group(0)
-
 	try:
+		street_address=re.search("(.*?)(?<=CO)",address)
+		street_address=street_address.group(0)
+		zipcode=re.search("(?<=CO )(.*?)(?=,)", address)
+		zipcode=zipcode.group(0)
+
 		#!Get information from first zillow call
 		zillow_data = ZillowWrapper(zws_id)
 		deep_search_response = zillow_data.get_deep_search_results(street_address,zipcode)
