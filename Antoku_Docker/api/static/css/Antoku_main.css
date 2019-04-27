@@ -13,7 +13,8 @@
     .sidenav {
       padding-top: 50px;
       background-color: #f1f1f1;
-      min-height: 125vh;
+      min-height: 195%;
+
     }
     .justified {
     position:absolute;
@@ -78,6 +79,7 @@
     }
     .area_sep{
       border-right: solid black 1px;
+      height:30px;
     }
     .area_active{
         padding-top: 3px;
@@ -88,11 +90,14 @@
 
     #map {
         
-        height: 500px;  /* The height is 400 pixels */
-        width: 150%;  /* The width is the width of the web page */
-        text-align: center;
-        margin-top: 40px;
-        margin-left: -25%;
+    height: 400px;
+    width: 120%;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 8%;
+    margin-bottom: 25px;
+    border: solid 2px black;
+    border-radius: 4px;
         }       
 
     .search_main{
@@ -109,6 +114,14 @@
       position: static;
       bottom: 0;
       width: 100%;
+    }
+
+    .index_card{
+      border: solid 1px black; 
+      position: absolute; 
+      left: 5%; 
+      width: 90%;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     }
     
     /* On small screens, set height to 'auto' for sidenav and grid */

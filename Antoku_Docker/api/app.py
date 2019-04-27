@@ -17,7 +17,16 @@ def home():
     return render_template('index.html')
 @app.route('/browse', methods=['GET'])
 def browse():
+
     return render_template('browse.html')
+
+@app.route('/search', methods=['GET'])
+def search(address):
+    conn = sqlite.connect('../data/AddressToDB.db')
+    conn.row_factory = dict_factory
+    cur = conn.cursor()
+    all_books = cur.execute("SELECT * FROM Address WHERE street_address=%s" %str(address)).fetchall()
+    return jsonify(all_books)
 
 
 
