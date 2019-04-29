@@ -21,6 +21,7 @@ class HomeInfo(Resource):
         query = conn.execute("select street_address,zipcode,Zestimate,HomeType,NumBath,HomeSize from Address where zillow_id=%d " %int(zillow_id))
         result = [dict(r) for r in query]
         return jsonify(result)
+
         
 
 api.add_resource(HomeInfo, '/homeinfo/<zillow_id>') # Route_2
