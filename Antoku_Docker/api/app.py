@@ -57,6 +57,11 @@ def search():
     content=all_data
     return render_template('SearchResults.html', content=content)
 
+@app.route('/details', methods=['GET'])
+def details():
+    search_ad =str(request.args.get('SA'))
+    return render_template('details.html')
+
 
 
 ###Create Seperate Home Details Page!!!

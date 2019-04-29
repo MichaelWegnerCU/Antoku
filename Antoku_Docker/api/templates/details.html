@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Antoku - Details</title>
+  <title>Antoku - Search Results</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="../static/css/Antoku_main.css">
+  <link rel="stylesheet" href="../static/css/Antoku_search.css">
     
 </head>
 <body style="overflow-x: hidden;" >
@@ -27,9 +27,9 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav n_left">
         <li><a href="{{ url_for('home') }}">Home</a></li>
-        <li><A href="{{ url_for('browse') }}">Property Details</a></li>
-        <li><a class="active"><a href="#">Project Description</a></li>
-        
+        <li class="active"><a href="#">Property Details</a></li>
+        <li><a href="#">Project Description</a></li>
+       
       </ul>
       <ul class="nav navbar-nav justified n_center">
         <li><img src="../static/img/A_logo.png" height="100" width="275"></li>
@@ -43,40 +43,83 @@
 <!--END NAV BAR -->
 
 <div class="container-fluid text-center">    
-  <div class="row content">
+  
     <div class="col-sm-1 sidenav">
-      
-    </div>
+      </div>
+
     <div class="col-sm-10 text-left"> 
       <br>
       <div class="main_justified">
-          <h1 >Project Description</h1>
+          <h1 >Search Results</h1>
+
+      <!-- START INDEX MAIN CARD-->
+      <div class="index_card" style="border: solid 1px black; border-radius: 5px;" >
+        <div class="Result" style="width: 95%; height: 150px;  padding: 15px;">
+          <div class="row">
+            <div class="col-sm-2" style="margin-top: 10px;">
+              <img src="../static/img/Home_img/{{ content[0].zillow_id }}.jpg" height="100" width="150">
+            </div>
+            <div class="col-sm-5" style="text-align: left; margin-left: 20px; ">
+
+              <div class="row">
+                <div class="col-sm-4" >
+                  <h4>Street Address:<h4> 
+                </div>
+                <div class="col-sm-6">
+                  <h5>{{ content[0].street_address }}<h5>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-4">
+                  <h4>Zip:<h4> 
+                </div>
+                <div class="col-sm-6">
+                  <h5>{{ content[0].zipcode }}<h5>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-4">
+                  <h4>Zillow ID:<h4> 
+                </div>
+                <div class="col-sm-6">
+                  <h5>{{ content[0].zillow_id }}<h5>
+                </div>
+              </div>
+
+
+
+            </div>
+            <div class="col-sm-5" style="text-align: left;  margin-left: -20px;">
+                <div class="row">
+                <div class="col-sm-4">
+                  <h4>Zestimate:<h4> 
+                </div>
+                <div class="col-sm-6">
+                  <h5>$ {{ content[0].Zestimate }}<h5>
+                </div>
+              </div>
+            </div>
+
+          </div>        
+        </div>
+        
+      </div>
+      <!-- END INDEX MAIN CARD-->
+          
+                 
       </div>
 
       </div>
     
     <div class="col-sm-1 sidenav">
-
     </div>
     </div>
-  </div>
 </div>
-
-      <!-- START INDEX MAIN CARD-->
-      <div class="index_card" style="border: solid 1px black; 
-      position: absolute; 
-      left: 5%; 
-      width: 90%;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-       
-      <!-- END INDEX MAIN CARD-->
-
-
-
 <footer class="container-fluid text-center">
   <p>Antoku created by: Michael Wegner | Daniel Zhou | Josh Aguilar </p>
 </footer>
-
 <script type="text/javascript">
     var locations = [
           ['2893 Springdale Ln, Boulder, CO', 40.009373, -105.255454, 4],
@@ -107,7 +150,6 @@
           map: map,
           title: '1623 19th St, Boulder, CO'
         });
-
     }
     
 </script>

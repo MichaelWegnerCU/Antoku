@@ -27,8 +27,8 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav n_left">
         <li class="active"><a href="{{ url_for('home') }}">Home</a></li>
-        <li><a href="{{ url_for('browse') }}">Property Details</a></li>
-        <li><a href="{ url_for('details') }}">Project Description</a></li>
+        <li><a href="{{ url_for('details') }}">Property Details</a></li>
+        <li><a href="{ url_for('description') }}">Project Description</a></li>
        
       </ul>
       <ul class="nav navbar-nav justified n_center">
@@ -126,21 +126,42 @@
                   <!--Standard list item -->
                    <div class="hl_item">
                       <div class="row" style="padding: 10px; border: 1px solid grey; border-radius: 5px; margin: 5px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-                        <div class="col-sm-1" style="padding-top: 15px;">
+                        <div class="col-sm-2" style="margin-left:-20px;padding-top: 15px;">
+                          <img src="../static/img/Home_img/{{ home.zillow_id }}.jpg" height="100" width="150">
                           <h3>{{ home.index }}<h3>
                         </div>
-                        <div class="col-sm-4">
-                          <img src="../static/img/Home_img/{{ home.zillow_id }}.jpg" height="100" width="150">
+                        <div class="col-sm-8" style="margin-left:95px;padding-top: 5px; padding-left: 30px; text-align: center; margin-right: -30px;">
+                          <div class="row">
+                            <div class="col-sm-4" style="margin-left: 15px;">
+                              <a href="{{ url_for('search') }}?SA={{ home.street_address }}"><h4>Street Address:<h4></a>
+                            </div>
+                            <div class="col-sm-6" style="margin-left: 20px;">
+                              <a href="{{ url_for('search') }}?SA={{ home.street_address }}"><h5>{{ home.street_address }}<h5></a>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-sm-4">
+                              <h4>Zestimate: <h4> 
+                            </div>
+                            <div class="col-sm-6" style="margin-left: 20px;">
+                              <h5>$ {{ home.Zestimate }}<h5>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-sm-4"style="margin-left: 20px;">
+                              <h4>Zillow ID:<h4> 
+                            </div>
+                            <div class="col-sm-6">
+                              <h5>{{ home.zillow_id }}<h5>
+                            </div>
+                          </div>
+                          
                         </div>
-                        <div class="col-sm-7" style="padding-top: 10px; padding-left: 30px; text-align: left;">
-                          <ul class="">
-                            <li>Zestimate:{{ home.Zestimate }} </li>
-                            <li>Index Test: {{ home.index }}</li>
-                            <li>Antoku Score</li>
-                            
-                          </ul>
-                        </div>
+      
                       </div>
+                      
                    </div>
                    <!--End standard list item -->
 
