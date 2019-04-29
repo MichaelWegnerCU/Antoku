@@ -5,7 +5,7 @@ zws_id= "X1-ZWz1h11b99c5qj_7kib9"
 
 f_name = open("CompleteAddress.txt", "r")
 data_base= open("UpdatedHomeLatLong.txt","+w")
-write_out="street_address | zipcode | zillow_id | Zestimate | Home_type | num_bath | num_bed | home_size"
+write_out="street_address | zipcode | zillow_id | Zestimate | Home_type | num_bath | num_bed | home_size | Lat | Long "
 data_base.write(write_out)
 
 for line in f_name:
