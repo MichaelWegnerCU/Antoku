@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Antoku - Search Results</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../static/css/Antoku_search.css">
+    
+</head>
+<body style="overflow-x: hidden;" >
+
+<!--NAV BAR -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav n_left">
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li class="active"><a href="#">Property Details</a></li>
+        <li><a href="#">Project Description</a></li>
+       
+      </ul>
+      <ul class="nav navbar-nav justified n_center">
+        <li><img src="../static/img/A_logo.png" height="100" width="275"></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right n_right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--END NAV BAR -->
+
+<div class="container-fluid text-center">    
+  
+    <div class="col-sm-1 sidenav">
+      </div>
+
+    <div class="col-sm-10 text-left"> 
+      <br>
+      <div class="main_justified">
+          <h1 >Search Results</h1>
+
+      <!-- START INDEX MAIN CARD-->
+      <div class="index_card" style="border: solid 1px black; border-radius: 5px;" >
+        <div class="Result" style="width: 95%; height: 150px;  padding: 15px;">
+          <div class="row">
+            <div class="col-sm-2" style="margin-top: 10px;">
+              <img src="../static/img/Home_img/{{ content[0].zillow_id }}.jpg" height="100" width="150">
+            </div>
+            <div class="col-sm-5" style="text-align: left; margin-left: 20px; ">
+
+              <div class="row">
+                <div class="col-sm-4" >
+                  <h4>Street Address:<h4> 
+                </div>
+                <div class="col-sm-6">
+                  <h5>{{ content[0].street_address }}<h5>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-4">
+                  <h4>Zip:<h4> 
+                </div>
+                <div class="col-sm-6">
+                  <h5>{{ content[0].zipcode }}<h5>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-4">
+                  <h4>Zillow ID:<h4> 
+                </div>
+                <div class="col-sm-6">
+                  <h5>{{ content[0].zillow_id }}<h5>
+                </div>
+              </div>
+
+
+
+            </div>
+            <div class="col-sm-5" style="text-align: left;  margin-left: -20px;">
+                <div class="row">
+                <div class="col-sm-4">
+                  <h4>Zestimate:<h4> 
+                </div>
+                <div class="col-sm-6">
+                  <h5>$ {{ content[0].Zestimate }}<h5>
+                </div>
+              </div>
+            </div>
+
+          </div>        
+        </div>
+        
+      </div>
+      <!-- END INDEX MAIN CARD-->
+          
+                 
+      </div>
+
+      </div>
+    
+    <div class="col-sm-1 sidenav">
+    </div>
+    </div>
+</div>
+<footer class="container-fluid text-center">
+  <p>Antoku created by: Michael Wegner | Daniel Zhou | Josh Aguilar </p>
+</footer>
+<script type="text/javascript">
+    var locations = [
+          ['2893 Springdale Ln, Boulder, CO', 40.009373, -105.255454, 4],
+          ['3000 Broadway #2, Boulder, CO', 40.029218, -105.281083, 5],
+          ['1623 19th St, Boulder, CO', 40.015852, -105.27058, 3],
+        ];
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      var boulder = {lat: 40.04, lng: -105.27};
+      // The map, centered at Uluru
+      var map = new google.maps.Map(
+          document.getElementById('map'), {zoom: 11, center: boulder});
+      // The marker, positioned at Uluru
+      var myLatLng = [{lat: 40.009373, lng: -105.255454},{lat: 40.029218, lng: -105.281083},{lat: 40.015852, lng: -105.27058}];
+      var marker = new google.maps.Marker({
+          position: myLatLng[0],
+          map: map,
+          title: '2893 Springdale Ln, Boulder, CO'
+        });
+      var marker = new google.maps.Marker({
+          position: myLatLng[1],
+          map: map,
+          title: '3000 Broadway #2, Boulder, CO'
+        });
+      var marker = new google.maps.Marker({
+          position: myLatLng[2],
+          map: map,
+          title: '1623 19th St, Boulder, CO'
+        });
+    }
+    
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0IuivzVdNQnYQ0kIcZ7x_an7bJ7BwC3o&callback=initMap">
+</script>
+</body>
+</html>

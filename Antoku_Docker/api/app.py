@@ -28,14 +28,11 @@ def home():
     content = all_data
     y=1
     for x in content:
-        
+
         x["index"] = y
         y+=1
      
     #return render_template('test_temp.html', content=content)
-
-
-
     ##return stadared index
     return render_template('index.html', content=content)
 
@@ -47,13 +44,22 @@ def browse():
     return render_template('browse.html')
 
 @app.route('/search', methods=['GET'])
-def search(address):
-    conn = sqlite.connect('../data/AddressToDB.db')
+def search():
+
+    search_ad =str(request.args.get('SA'))
+
+    conn = sqlite.connect('../data/FullAddress.db')
     conn.row_factory = dict_factory
     cur = conn.cursor()
-    all_books = cur.execute("SELECT * FROM Address WHERE street_address=%s" %str(address)).fetchall()
-    return jsonify(all_books)
+    query = "SELECT * FROM Address where street_address like '{}'".format(search_ad)
+    
+    all_data = cur.execute(query).fetchall()
+    content=all_data
+    return render_template('SearchResults.html', content=content)
 
+
+
+###Create Seperate Home Details Page!!!
 
 
 @app.errorhandler(404)
