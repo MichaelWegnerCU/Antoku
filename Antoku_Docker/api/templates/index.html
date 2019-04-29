@@ -34,9 +34,7 @@
       <ul class="nav navbar-nav justified n_center">
         <li><img src="../static/img/A_logo.png" height="100" width="275"></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right n_right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
+      
     </div>
   </div>
 </nav>
@@ -50,6 +48,7 @@
     <div class="col-sm-10 text-left"> 
       <br>
       <div class="main_justified">
+  
           <h1 >Explore Investments</h1>
           
           <p style="font-style: italic;">Experience the benefits of real estate investments without the fear.</p>
@@ -107,114 +106,44 @@
             <div class="col-md-5">
               <!--The div element for the map -->
               <div id="map"></div>
+              <div style="text-align: center; margin-left: 30%; color:grey;">
+                <h4>Displaying Results: 1 - 10 -></h4>
+              </div>
             </div>
             <div class="col-md-2" style=" border-right: 2px solid black; height: 470px;  margin-left: -40px; ">
+
             </div>
+
             <div class="col-md-5">
 
               <!--Begin home list-->
-              <div class="home_list" style="overflow: scroll; height: 500px;">
-                 <!--Standard list item -->
-                 <div class="hl_item">
-                    <div class="row" style="padding: 10px; border: 1px solid grey; border-radius: 5px; margin: 5px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-                      <div class="col-sm-1" style="padding-top: 15px;">
-                        <h3>1<h3>
-                      </div>
-                      <div class="col-sm-4">
-                        <img src="../static/img/890_pic1.jpg" height="100" width="150">
-                      </div>
-                      <div class="col-sm-7" style="padding-top: 10px; padding-left: 30px; text-align: left;">
-                        <ul class="">
-                          <li>Status</li>
-                          <li>Average Rent</li>
-                          <li>Antoku Score</li>
-                          
-                        </ul>
-                      </div>
-                    </div>
-                 </div>
-                 <!--End standard list item -->
-                 <!--Standard list item -->
-                 <div class="hl_item">
-                    <div class="row" style="padding: 10px; border: 1px solid grey; border-radius: 5px; margin: 5px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-                      <div class="col-sm-1" style="padding-top: 15px;">
-                        <h3>2<h3>
-                      </div>
-                      <div class="col-sm-4">
-                        <img src="../static/img/890_pic1.jpg" height="100" width="150">
-                      </div>
-                      <div class="col-sm-7" style="padding-top: 10px; padding-left: 30px; text-align: left;">
-                        <ul class="">
-                          <li>Status</li>
-                          <li>Average Rent</li>
-                          <li>Antoku Score</li>
-                          
-                        </ul>
-                      </div>
-                    </div>
-                 </div>
-                 <!--End standard list item -->
-                 <!--Standard list item -->
-                 <div class="hl_item">
-                    <div class="row" style="padding: 10px; border: 1px solid grey; border-radius: 5px; margin: 5px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-                      <div class="col-sm-1" style="padding-top: 15px;">
-                        <h3>3<h3>
-                      </div>
-                      <div class="col-sm-4">
-                        <img src="../static/img/890_pic1.jpg" height="100" width="150">
-                      </div>
-                      <div class="col-sm-7" style="padding-top: 10px; padding-left: 30px; text-align: left;">
-                        <ul class="">
-                          <li>Status</li>
-                          <li>Average Rent</li>
-                          <li>Antoku Score</li>
-                          
-                        </ul>
-                      </div>
-                    </div>
-                 </div>
-                 <!--End standard list item -->
-                 <!--Standard list item -->
-                 <div class="hl_item">
-                    <div class="row" style="padding: 10px; border: 1px solid grey; border-radius: 5px; margin: 5px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-                      <div class="col-sm-1" style="padding-top: 15px;">
-                        <h3>4<h3>
-                      </div>
-                      <div class="col-sm-4">
-                        <img src="../static/img/890_pic1.jpg" height="100" width="150">
-                      </div>
-                      <div class="col-sm-7" style="padding-top: 10px; padding-left: 30px; text-align: left;">
-                        <ul class="">
-                          <li>Status</li>
-                          <li>Average Rent</li>
-                          <li>Antoku Score</li>
-                          
-                        </ul>
-                      </div>
-                    </div>
-                 </div>
-                 <!--End standard list item -->
-                 <!--Standard list item -->
-                 <div class="hl_item">
-                    <div class="row" style="padding: 10px; border: 1px solid grey; border-radius: 5px; margin: 5px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-                      <div class="col-sm-1" style="padding-top: 15px;">
-                        <h3>5<h3>
-                      </div>
-                      <div class="col-sm-4">
-                        <img src="../static/img/890_pic1.jpg" height="100" width="150">
-                      </div>
-                      <div class="col-sm-7" style="padding-top: 10px; padding-left: 30px; text-align: left;">
-                        <ul class="">
-                          <li>Status</li>
-                          <li>Average Rent</li>
-                          <li>Antoku Score</li>
-                          
-                        </ul>
-                      </div>
-                    </div>
-                 </div>
-                 <!--End standard list item -->
+              <div class="home_list" style="overflow-y: scroll; height: 500px;">
 
+                {% for home in content %}
+                  <!--Standard list item -->
+                   <div class="hl_item">
+                      <div class="row" style="padding: 10px; border: 1px solid grey; border-radius: 5px; margin: 5px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                        <div class="col-sm-1" style="padding-top: 15px;">
+                          <h3>{{ home.index }}<h3>
+                        </div>
+                        <div class="col-sm-4">
+                          <img src="../static/img/Home_img/{{ home.zillow_id }}.jpg" height="100" width="150">
+                        </div>
+                        <div class="col-sm-7" style="padding-top: 10px; padding-left: 30px; text-align: left;">
+                          <ul class="">
+                            <li>Zestimate:{{ home.Zestimate }} </li>
+                            <li>Index Test: {{ home.index }}</li>
+                            <li>Antoku Score</li>
+                            
+                          </ul>
+                        </div>
+                      </div>
+                   </div>
+                   <!--End standard list item -->
+
+                {% endfor %}
+
+               
               </div>
               <!--END HOME LIST-->
             </div>
@@ -252,26 +181,89 @@
       var map = new google.maps.Map(
           document.getElementById('map'), {zoom: 12, center: boulder});
       // The marker, positioned at Uluru
-      var myLatLng = [{lat: 40.009373, lng: -105.255454},{lat: 40.029218, lng: -105.281083},{lat: 40.015852, lng: -105.27058}];
+      var myLatLng = [
+      {lat: parseFloat('{{content[0].LNG}}'), lng: parseFloat('{{content[0].LAT}}') },
+      {lat: parseFloat('{{content[1].LNG}}'), lng: parseFloat('{{content[1].LAT}}') },
+      {lat: parseFloat('{{content[2].LNG}}'), lng: parseFloat('{{content[2].LAT}}') },
+      {lat: parseFloat('{{content[3].LNG}}'), lng: parseFloat('{{content[3].LAT}}') },
+      {lat: parseFloat('{{content[4].LNG}}'), lng: parseFloat('{{content[4].LAT}}') },
+      {lat: parseFloat('{{content[5].LNG}}'), lng: parseFloat('{{content[5].LAT}}') },
+      {lat: parseFloat('{{content[6].LNG}}'), lng: parseFloat('{{content[6].LAT}}') },
+      {lat: parseFloat('{{content[7].LNG}}'), lng: parseFloat('{{content[7].LAT}}') },
+      {lat: parseFloat('{{content[8].LNG}}'), lng: parseFloat('{{content[8].LAT}}') },
+      {lat: parseFloat('{{content[9].LNG}}'), lng: parseFloat('{{content[9].LAT}}') },
+      ];
+
       var marker = new google.maps.Marker({
           position: myLatLng[0],
           map: map,
-          title: '2893 Springdale Ln, Boulder, CO',
+          title: '{{content[0].street_address}}',
           icon: 'https://raw.githubusercontent.com/Concept211/Google-Maps-Markers/master/images/marker_blue1.png'
 
         });
+
       var marker = new google.maps.Marker({
           position: myLatLng[1],
           map: map,
-          title: '3000 Broadway #2, Boulder, CO',
+          title: '{{content[1].street_address}}',
           icon: 'https://raw.githubusercontent.com/Concept211/Google-Maps-Markers/master/images/marker_blue2.png'
+
         });
-      var marker = new google.maps.Marker({
+
+     var marker = new google.maps.Marker({
           position: myLatLng[2],
           map: map,
-          title: '1623 19th St, Boulder, CO',
+          title: '{{content[2].street_address}}',
           icon: 'https://raw.githubusercontent.com/Concept211/Google-Maps-Markers/master/images/marker_blue3.png'
 
+        });
+     var marker = new google.maps.Marker({
+          position: myLatLng[3],
+          map: map,
+          title: '{{content[3].street_address}}',
+          icon: 'https://raw.githubusercontent.com/Concept211/Google-Maps-Markers/master/images/marker_blue4.png'
+
+        });
+     var marker = new google.maps.Marker({
+          position: myLatLng[4],
+          map: map,
+          title: '{{content[4].street_address}}',
+          icon: 'https://raw.githubusercontent.com/Concept211/Google-Maps-Markers/master/images/marker_blue5.png'
+
+        });
+     var marker = new google.maps.Marker({
+          position: myLatLng[5],
+          map: map,
+          title: '{{content[5].street_address}}',
+          icon: 'https://raw.githubusercontent.com/Concept211/Google-Maps-Markers/master/images/marker_blue6.png'
+
+        });
+     var marker = new google.maps.Marker({
+          position: myLatLng[6],
+          map: map,
+          title: '{{content[6].street_address}}',
+          icon: 'https://raw.githubusercontent.com/Concept211/Google-Maps-Markers/master/images/marker_blue7.png'
+
+        });
+     var marker = new google.maps.Marker({
+          position: myLatLng[7],
+          map: map,
+          title: '{{content[7].street_address}}',
+          icon: 'https://raw.githubusercontent.com/Concept211/Google-Maps-Markers/master/images/marker_blue8.png'
+
+        });
+     var marker = new google.maps.Marker({
+          position: myLatLng[8],
+          map: map,
+          title: '{{content[8].street_address}}',
+          icon: 'https://raw.githubusercontent.com/Concept211/Google-Maps-Markers/master/images/marker_blue9.png'
+
+        });
+     var marker = new google.maps.Marker({
+          position: myLatLng[9],
+          map: map,
+          title: '{{content[9].street_address}}',
+          icon: 'https://raw.githubusercontent.com/Concept211/Google-Maps-Markers/master/images/marker_blue10.png'
 
         });
 

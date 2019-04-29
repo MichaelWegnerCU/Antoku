@@ -12,9 +12,35 @@ def dict_factory(cursor, row):
         d[col[0]] = row[idx]
     return d
     
+
+##This loads the index page
 @app.route('/', methods=['GET'])
 def home():
-    return render_template('index.html')
+    ##Connect to the OnlyCompDB and get the browse pop fields
+    conn = sqlite.connect('../data/OnlyComp.db')
+    conn.row_factory = dict_factory
+    cur = conn.cursor()
+    all_data = cur.execute("SELECT * FROM Address;").fetchall()
+    #jsonify(all_data)
+    ################################
+    ##Testing Index
+
+    content = all_data
+    y=1
+    for x in content:
+        
+        x["index"] = y
+        y+=1
+     
+    #return render_template('test_temp.html', content=content)
+
+
+
+    ##return stadared index
+    return render_template('index.html', content=content)
+
+
+
 @app.route('/browse', methods=['GET'])
 def browse():
 
@@ -35,13 +61,13 @@ def page_not_found(e):
     return "render_template('404.html'), 404"
 
 # A route to return all of the available entries in our catalog.
-@app.route('/api/v1/resources/books/all', methods=['GET'])
+@app.route('/test_db', methods=['GET'])
 def api_all():
-    conn = sqlite.connect('../data/AddressToDB.db')
+    conn = sqlite.connect('../data/OnlyComp.db')
     conn.row_factory = dict_factory
     cur = conn.cursor()
-    all_books = cur.execute("SELECT * FROM Address;").fetchall()
-    return jsonify(all_books)
+    all_data = cur.execute("SELECT LAT ,LNG FROM Address;").fetchall()
+    return jsonify(all_data)
 
 @app.route("/api/v1/resources/books", methods=['GET'])
 def api_filter():

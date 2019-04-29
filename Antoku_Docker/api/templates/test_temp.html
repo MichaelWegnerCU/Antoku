@@ -1,0 +1,12 @@
+
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+{% for user in content %}
+	<img src="../static/img/Home_img/{{ user.zillow_id }}.jpg" height="150" width="200">
+    <option value="{{ user.id }}">{{ user.zillow_id }} ||||| {{ user.PhotoLink }}</option>
+{% endfor %}
+</body>
+</html>
