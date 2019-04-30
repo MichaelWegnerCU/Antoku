@@ -4,7 +4,10 @@ from sqlalchemy import create_engine
 from json import dumps
 import sqlite3 as sqlite
 import sys
+import requests
+import xmltodict
 import os
+import json
 from flask_jsonpify import jsonify
 
 db_connect = create_engine('sqlite:///testtest.db')
@@ -50,12 +53,26 @@ class getUser(Resource):
         all_data = cur.execute(query).fetchall()
         return all_data 
 
+class getComp(Resource):
+    def get(self,zpid):
+        pid = zpid
+        zws_id= "X1-ZWz1h11b99c5qj_7kib9"
+        rentzestimate = True
+        count = 10
+        PARAMS = {'zws-id':zws_id,'zpid':pid,'unit-type': "dollar", 'width':400, 'height': 250, 'chartDuration':"10years"}
+        URL = "http://www.zillow.com/webservice/GetChart.htm"
+        r = requests.get(url = URL, params=PARAMS)
+        data = r.content.decode('utf-8')
+        xmltodict_data = xmltodict.parse(data)
+        return json.dumps(xmltodict_data)
+
         
 
 api.add_resource(HomeInfo, '/homeinfo/<zillow_id>') # Route_2
 api.add_resource(Zestimate, '/Zestimate/<zillow_id>') # Route_1
 api.add_resource(getJoin, '/getJoin/<zillow_id>')
 api.add_resource(getUser, '/getUser/<zillow_id>')
+api.add_resource(getComp, '/getComp/<zpid>')
 
 if __name__ == '__main__':
      app.debug = True
