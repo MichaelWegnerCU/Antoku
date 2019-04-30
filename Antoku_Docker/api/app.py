@@ -66,10 +66,10 @@ def search():
     try:
         search_ad =str(request.args.get('SA'))
 
-        conn = sqlite.connect('../data/FullAddress.db')
+        conn = sqlite.connect('../data/OnlyComp.db')
         conn.row_factory = dict_factory
         cur = conn.cursor()
-        query = "SELECT * FROM Address where street_address like '{}'".format(search_ad)
+        query = "SELECT * FROM Address where street_address = '{}'".format(search_ad)
         
         all_data = cur.execute(query).fetchall()
         content=all_data
