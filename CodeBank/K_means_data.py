@@ -64,13 +64,19 @@ def generate_Comp_fields_txt():
 def generate_only_comp_fields_db():
 	conn = sqlite3.connect("K_means_data.db")
 	curs = conn.cursor()
-	curs.execute("CREATE TABLE Address (street_address TEXT, zipcode INTEGER, zillow_id INTEGER PRIMARY KEY, Zestimate INTEGER, NumBath INTEGER, NumBed INTEGER, LNG REAL, LAT REAL);")
+	curs.execute("CREATE TABLE Address (street_address TEXT, zipcode INTEGER, zillow_id INTEGER PRIMARY KEY, Zestimate INTEGER, NumBath INTEGER, NumBed INTEGER, LNG REAL, LAT REAL,AScore INTEGER);")
 	reader = csv.reader(open('K_means_data.txt', 'r'), delimiter='|')
-	for row in reader:
 
+	a_score=[3,0,2,2,3,3,2,0,4,2,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,0,4,1,4,4,0,1,1,4,1,1,1,0,2,4,4,2,1,1,0,1,4,0,3,1,3,3,0,4,0,1,1,4,4,4,4,3,1,1,1,3,0,4,3,4,0,0,0,1,1,1,1,0,0,2,0,1,4,4,0,0,0,4,0,1,0]
+	i=0
+	print(len(a_score))
+	for row in reader:
+		if(i==92):
+			break
 		print(row)#
-		to_db = [row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7]]
-		curs.execute("INSERT INTO Address (street_address, zipcode, zillow_id, Zestimate, NumBath, NumBed, LNG, LAT) VALUES (?, ?, ?, ?, ?, ?, ?, ?);", to_db)
+		to_db = [row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7],a_score[i]]
+		i+=1
+		curs.execute("INSERT INTO Address (street_address, zipcode, zillow_id, Zestimate, NumBath, NumBed, LNG, LAT, AScore) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);", to_db)
 	conn.commit()
 
 generate_only_comp_fields_db()

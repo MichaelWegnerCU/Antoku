@@ -43,16 +43,18 @@ def browse():
     conn = sqlite.connect('../data/OnlyComp.db')
     conn.row_factory = dict_factory
     cur = conn.cursor()
+
     all_data = cur.execute("SELECT * FROM Address;").fetchall()
-    #jsonify(all_data)
+    a_scores = [3,0,1,3,3,1,0,0,1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,0,2,2,0,3,2,2,2,2,2,2,0,1,0,0,1,2,2,0,2,0,0,3,2,3,0,0,0,2,2,0,0,2,2,3,2,2,2,3,0,2,3,0,0,0,0,2,2,2,2,3,0,0,2,2,2,0,0,0,2,0,2,0]
+   
     ################################
     ##Testing Index
-
     content = all_data
     y=1
     for x in content:
-
+        x["AScore"] = (a_scores[y-1])+1
         x["index"] = y
+        
         y+=1
      
     #return render_template('test_temp.html', content=content)

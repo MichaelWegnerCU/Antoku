@@ -38,7 +38,7 @@ def distance(origin, destination):
 
 
 
-for i in range(0,96):
+for i in range(0,92):
 	if all_data[i]['Zestimate'] <=1500000:
 		CU = [40.003999984, -105.266998932]
 	
@@ -59,7 +59,7 @@ X=np.array(hold_array)
 
 
 
-y_pred = KMeans(n_clusters=5, random_state=random_state).fit_predict(X)
+y_pred = KMeans(n_clusters=4, random_state=random_state).fit_predict(X)
 print(y_pred)
 
 
