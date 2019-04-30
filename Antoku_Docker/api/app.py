@@ -40,32 +40,47 @@ def home():
 
 @app.route('/browse', methods=['GET'])
 def browse():
+    conn = sqlite.connect('../data/OnlyComp.db')
+    conn.row_factory = dict_factory
+    cur = conn.cursor()
+    all_data = cur.execute("SELECT * FROM Address;").fetchall()
+    #jsonify(all_data)
+    ################################
+    ##Testing Index
 
-    return render_template('browse.html')
+    content = all_data
+    y=1
+    for x in content:
+
+        x["index"] = y
+        y+=1
+     
+    #return render_template('test_temp.html', content=content)
+    ##return stadared index
+    return render_template('browse.html', content=content)
 
 @app.route('/search', methods=['GET'])
 def search():
+    try:
+        search_ad =str(request.args.get('SA'))
 
-    search_ad =str(request.args.get('SA'))
+        conn = sqlite.connect('../data/FullAddress.db')
+        conn.row_factory = dict_factory
+        cur = conn.cursor()
+        query = "SELECT * FROM Address where street_address like '{}'".format(search_ad)
+        
+        all_data = cur.execute(query).fetchall()
+        content=all_data
+        return render_template('SearchResults.html', content=content)
+    except:
+        return "ERROR: No homes found with attribute: "+search_ad
 
-    conn = sqlite.connect('../data/FullAddress.db')
-    conn.row_factory = dict_factory
-    cur = conn.cursor()
-    query = "SELECT * FROM Address where street_address like '{}'".format(search_ad)
-    
-    all_data = cur.execute(query).fetchall()
-    content=all_data
-    return render_template('SearchResults.html', content=content)
-
-<<<<<<< Updated upstream
 
 @app.route('/details', methods=['GET'])
 def details():
-    search_ad =str(request.args.get('SA'))
+    
     return render_template('details.html')
 
-=======
->>>>>>> Stashed changes
 #@app.route('/search', methods=['GET'])
 #def searchInvestment():
 #    search_ad = str(request.args.get('SA'))
@@ -97,7 +112,7 @@ def api_all():
     conn = sqlite.connect('../data/OnlyComp.db')
     conn.row_factory = dict_factory
     cur = conn.cursor()
-    all_data = cur.execute("SELECT LAT ,LNG FROM Address;").fetchall()
+    all_data = cur.execute("SELECT zillow_id ,PhotoLink FROM Address;").fetchall()
     return jsonify(all_data)
 
 @app.route("/api/v1/resources/books", methods=['GET'])

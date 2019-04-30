@@ -11,46 +11,7 @@
   <link rel="stylesheet" href="../static/css/Antoku_main.css">
     
 </head>
-<style>
-.slidecontainer {
-  width: 100%;
-  margin-left: 75px;
-}
 
-.slider {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 15px;
-  border-radius: 5px;
-  background: #d3d3d3;
-  outline: none;
-  opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
-}
-
-.slider:hover {
-  opacity: 1;
-}
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #3e85ef;
-  cursor: pointer;
-}
-
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #4CAF50;
-  cursor: pointer;
-}
-</style>
 <body style="overflow-x: hidden;" >
 
 <!-- NAV BAR -->
@@ -66,8 +27,8 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav n_left">
-        <li class="active"><a href="{{ url_for('home') }}">Home</a></li>
-        <li><a href="{{ url_for('browse') }}">Browse Properties</a></li>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li class="active"><a href="{{ url_for('browse') }}">Browse Properties</a></li>
         <li><a href="{ url_for('description') }}">Project Description</a></li>
        
       </ul>
@@ -88,86 +49,28 @@
     <div class="col-sm-10 text-left"> 
       <br>
       <div class="main_justified">
-  
-          <h1 >Explore Investments</h1>
-          
-          <p style="font-style: italic;">Experience the benefits of real estate investments without the fear.</p>
-          <br>
 
-          <!--Start Search section -->
-          <div class="container search_main">
-            <div class="row">
-              <form action="{{ url_for('search') }}">
-                  <div class="col-md-6">
-                      <div id="custom-search-input">
-                          <div class="input-group col-md-12">
-                              <input type="text" name="SA" class="form-control input-lg" placeholder="Enter Address" />
-                              <span class="input-group-btn">
-                                  <button class="btn btn-info btn-lg" type="button" onclick = 'this.form.submit();'>
-                                      <i class="glyphicon glyphicon-search"></i>
-                                  </button>
-                              </span>
-                          </div>
-                      </div>
-                  </div>
-              </form>
-            </div>
-          </div>
-          <!-- End Search section -->
-      <hr>
-      <br>
-
-
+         <h3> Browse Homes in: Boulder <h3>
       <!-- START INDEX MAIN CARD-->
       <div class="index_card" style="border: solid 1px black; 
       position: absolute; 
-      left: 5%; 
-      width: 90%;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+      left: 1%; 
+      width: 98%;
+      height: 95vh;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      border-radius: 5px;
+      ">
         <div class="row"style="padding-top: 20px;">
-          <div class="col-md-6" style="text-align: right; padding-right: 100px;" >
-            <h3 style="color: grey;">Explore an area:<h3>
-          </div>
-            <div class="col-md-6 area_opt">
-              <div class="row" style="padding-top: 15px;">
-                <div class="col-md-4 area_active">
-                  <a>Boulder</a>
-                </div>
-                <div class="col-sm-4 area_sep">
-                  <a>Los Angles<a>
-                </div>
-                <div class="col-sm-4">
-                  <a>New York<a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          
-          <div class="row" style="margin-top: 20px;margin-bottom: 20px;">
-            <div class="col-md-5">
-              <!--The div element for the map -->
-              <div id="map"></div>
-              <div class="slidecontainer">
-                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                <br>
-                <p>Displaying results 1 - <span id="demo"></span></p>
-              </div>
-            </div>
-            <div class="col-md-2" style=" border-right: 2px solid black; height: 470px;  margin-left: -40px; ">
-
-            </div>
-
-            <div class="col-md-5">
+  
+        </div>
 
               <!--Begin home list-->
-              <div class="home_list" style="overflow-y: scroll; height: 500px;">
+              <div class="home_list" style="overflow-y: scroll; height: 95%;display: inline-block;    ">
 
                 {% for home in content %}
                   <!--Standard list item -->
-                   <div class="hl_item">
-                      <div class="row" style="padding: 10px; border: 1px solid grey; border-radius: 5px; margin: 5px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                   <div class="hl_item" style="width: 380px; float: left; height: 250px;">
+                      <div class="row" style="padding: 10px; border: 1px solid grey; border-radius: 5px; margin: 5px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); height: 230px;">
                         <div class="col-sm-2" style="margin-left:-5px;margin-right:-15px;padding-top: 15px;">
                           <img src="../static/img/Home_img/{{ home.zillow_id }}.jpg" height="100" width="150">
                           <h3>{{ home.index }}<h3>
@@ -181,16 +84,16 @@
                           </div>
 
                           <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-6"style="margin-left: 5px;">
                               <h4>Zestimate: <h4> 
                             </div>
-                            <div class="col-sm-6" style="margin-left: -25px;">
+                            <div class="col-sm-6" style="margin-left: -20px;">
                               <h5>$ {{ home.Zestimate }}<h5>
                             </div>
                           </div>
 
                           <div class="row">
-                            <div class="col-sm-6"style="margin-left: -5px;">
+                            <div class="col-sm-6"style="margin-left: 5px;">
                               <h4>Zillow ID:<h4> 
                             </div>
                             <div class="col-sm-6"style="margin-left: -25px;">
@@ -199,8 +102,13 @@
                           </div>
                           
                         </div>
-      
+                      <!--Antoku Score chart here-->
+                      <div class="col-sm-6" style="padding-top: 20px;">
+                          TEST
                       </div>
+                      <!--End Antoku Score chart-->
+                      </div>
+                      
                       
                    </div>
                    <!--End standard list item -->
@@ -211,8 +119,7 @@
               </div>
               <!--END HOME LIST-->
             </div>
-          </div>
-      </div>
+
       <!-- END INDEX MAIN CARD-->
 
     </div>

@@ -9,16 +9,14 @@ def generate_Comp_fields_txt():
 
 	f_name = open("UpdatedHomeLatLong.txt", "r")
 
-	data_base= open("OnlyCompFields.txt","+w")
+	data_base= open("K_means_data.txt","+w")
 
-	write_out="street_address | zipcode | zillow_id | Zestimate | Home_type | num_bath | num_bed | home_size | Lat | Long | img url | home description "
-	data_base.write(write_out)
 	#f_name=["2893 Springdale Ln, Boulder, CO|80303|13239207|630640|Townhouse|3.5|1|1297|40.009373|-105.255454"]
 	x=0
 	for line in f_name:
 		line=line.rstrip("\n")
 		address=line
-		if x==100:
+		if x==200:
 			break
 		try:
 			street_address=re.search("(.*?)(?<=CO)",address)
@@ -61,17 +59,17 @@ def generate_Comp_fields_txt():
 	#f_name.close()
 	data_base.close()
 
-generate_Comp_fields_txt()
+#generate_Comp_fields_txt()
 
 def generate_only_comp_fields_db():
-	conn = sqlite3.connect("OnlyComp.db")
+	conn = sqlite3.connect("K_means_data.db")
 	curs = conn.cursor()
-	curs.execute("CREATE TABLE Address (street_address TEXT, zipcode INTEGER, zillow_id INTEGER PRIMARY KEY, Zestimate INTEGER, HomeType TEXT, NumBath INTEGER, NumBed INTEGER, HomeSize INTEGER, LNG REAL, LAT REAL, PhotoLink Text, HomeDescription Text);")
-	reader = csv.reader(open('OnlyCompFields.txt', 'r'), delimiter='|')
+	curs.execute("CREATE TABLE Address (street_address TEXT, zipcode INTEGER, zillow_id INTEGER PRIMARY KEY, Zestimate INTEGER, NumBath INTEGER, NumBed INTEGER, LNG REAL, LAT REAL);")
+	reader = csv.reader(open('K_means_data.txt', 'r'), delimiter='|')
 	for row in reader:
 
 		print(row)#
-		to_db = [row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10], row[11]]
+		to_db = [row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7]]
 		curs.execute("INSERT INTO Address (street_address, zipcode, zillow_id, Zestimate, NumBath, NumBed, LNG, LAT) VALUES (?, ?, ?, ?, ?, ?, ?, ?);", to_db)
 	conn.commit()
 
