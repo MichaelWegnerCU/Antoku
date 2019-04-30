@@ -57,12 +57,32 @@ def search():
     content=all_data
     return render_template('SearchResults.html', content=content)
 
+<<<<<<< Updated upstream
+
 @app.route('/details', methods=['GET'])
 def details():
     search_ad =str(request.args.get('SA'))
     return render_template('details.html')
 
+=======
+>>>>>>> Stashed changes
+#@app.route('/search', methods=['GET'])
+#def searchInvestment():
+#    search_ad = str(request.args.get('SA'))
+#    conn = sqlite.connect('.../data/FullAddress.db')
+#    cur = conn.cursor()
+#    query = "SELECT investmentId,status,antoku_number FROM Address INNER JOIN Investment ON Address.zillow_id = Investment.investmentId where street_address like '{}'".format(search_ad)
+#    all_data = cur.execute(query).fetchall()
+#    return all_data
 
+#@app.route('/search', methods=['GET'])
+#def searchUser():
+#    search_ad = str(request.args.get('SA'))
+#    conn = sqlite.connect('.../data/FullAddress.db')
+#    cur = conn.cursor()
+#   query = "SELECT UserID,CurrentAmount,Returns FROM Address INNER JOIN User ON Address.zillow_id = User.InvestmentId where street_address like '{}'".format(search_ad)
+#    all_data = cur.execute(query).fetchall()
+#   return all_data
 
 ###Create Seperate Home Details Page!!!
 
