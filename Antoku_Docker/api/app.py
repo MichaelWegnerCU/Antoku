@@ -80,8 +80,15 @@ def search():
 
 @app.route('/details', methods=['GET'])
 def details():
-    
-    return render_template('details.html')
+    zillow_id =str(request.args.get('zwi'))
+    conn = sqlite.connect('../data/OnlyComp.db')
+    conn.row_factory = dict_factory
+    cur = conn.cursor()
+    query = "SELECT * FROM Address where zillow_id = '{}'".format(zillow_id)
+        
+    all_data = cur.execute(query).fetchall()
+    content=all_data
+    return render_template('details.html',content=content)
 
 #@app.route('/search', methods=['GET'])
 #def searchInvestment():
