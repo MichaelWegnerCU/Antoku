@@ -102,7 +102,7 @@
       <!-- START INDEX MAIN CARD-->
       <div class="index_card" style="border: solid 1px black; border-radius: 5px;" >
 
-        <div class="Details" style="width: 95%; height: 380px;  padding: 15px; border: 1px solid black; margin-top: 10px; margin-left: 2.5%; border-radius: 5px;">
+        <div class="Details" style="width: 95%; height: 400px;  padding: 15px; border: 1px solid black; margin-top: 10px; margin-left: 2.5%; border-radius: 5px;">
           <div class="row">
             <div class="col-sm-3" style="margin-top: 70px;">
               <img src="../static/img/Home_img/{{ content[0].zillow_id }}.jpg" height="200" width="250">
@@ -113,8 +113,11 @@
                 <div class="col-sm-4" >
                   <h4>Street Address:<h4> 
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                   <h5>{{ content[0].street_address }}<h5>
+                </div>
+                <div class="col-sm-5" style="margin-right: -50px;">
+                  <h5>Number of Bedrooms: {{ content[0].NumBed }}<h5>
                 </div>
               </div>
 
@@ -122,8 +125,11 @@
                 <div class="col-sm-4">
                   <h4>Zip:<h4> 
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                   <h5>{{ content[0].zipcode }}<h5>
+                </div>
+                <div class="col-sm-5" style="margin-right: -80px;">
+                  <h5>Number of Bathrooms: {{ content[0].NumBath }}<h5>
                 </div>
               </div>
 
@@ -131,8 +137,11 @@
                 <div class="col-sm-4">
                   <h4>Zillow ID:<h4> 
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                   <h5>{{ content[0].zillow_id }}<h5>
+                </div>
+                <div class="col-sm-5" style="margin-right: -80px;">
+                  <h5>Home Size: {{ content[0].HomeSize }} sqft<h5>
                 </div>
               </div>
 
@@ -140,8 +149,12 @@
                 <div class="col-sm-4">
                   <h4>Zestimate:<h4> 
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                   <h5>$ {{ content[0].Zestimate }}<h5>
+                </div>
+                
+                <div class="col-sm-5" style="margin-right: -80px;">
+                  <h5>Home Size: {{ content[0].HomeType }} <h5>
                 </div>
               </div>
            
@@ -215,8 +228,24 @@
                 </div>
                 </div>
             </div>
-            <div class="col-sm-6" style="margin-top: 80px; text-align: center; margin-left: 30px; color: grey;">
-              <h4 style="">Location, location, location. At the end of the day everything comes down to location. The Antoku Score looks at the location of the potential investment and distance that location is from the University of Colorado Boulder</h4>
+            <div class="col-sm-6" style="margin-top:-10px; text-align: center; margin-left: 30px; color: #3e85ef;">
+              <h4  >Add Investment :</h4>
+              <div class="row">
+                <div class="col-sm-3"style="margin-top: 5px; margin-left: 55px; border: 1px solid black; height: 50px; border-radius: 5px;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                  <h4>10%</h4>
+                </div>
+                <div class="col-sm-3"style="margin-top: 5px;margin-left: 10px;  border: 1px solid black; height: 50px; border-radius: 5px;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                  <h4>10%</h4>
+                </div>
+                <div class="col-sm-3"style="margin-top: 5px;margin-left: 10px;  border: 1px solid black; height: 50px; border-radius: 5px;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                  <h4>10%</h4>
+                </div>
+              </div>
+
+              <div style="text-align: left;margin-top: 30px;margin-left: 40px;">
+                <h4>Current Zestimate:  $ {{ content[0].Zestimate }}<h4>
+                <h4>Estimated Rent Payment 10%:  $ {{ content[0].PR }}<h4>
+              </div>
             </div>
           </div>
       </div>

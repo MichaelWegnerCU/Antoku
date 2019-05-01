@@ -24,12 +24,14 @@ def home():
     #jsonify(all_data)
     ################################
     ##Testing Index
-
+    a_scores = [3,0,1,3,3,1,0,0,1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,0,2,2,0,3,2,2,2,2,2,2,0,1,0,0,1,2,2,0,2,0,0,3,2,3,0,0,0,2,2,0,0,2,2,3,2,2,2,3,0,2,3,0,0,0,0,2,2,2,2,3,0,0,2,2,2,0,0,0,2,0,2,0]
     content = all_data
     y=1
+    z=0
     for x in content:
-
+        x["AScore"] = 4-(a_scores[z])
         x["index"] = y
+        z+=1
         y+=1
      
     #return render_template('test_temp.html', content=content)
@@ -93,6 +95,7 @@ def details():
     content=all_data
  
     content[0]["AScore"] = a_score
+    content[0]["PR"] = .1*(.008*(content[0]["Zestimate"]))
      
     return render_template('details.html',content=content)
 
