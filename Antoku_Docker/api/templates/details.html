@@ -46,7 +46,7 @@
         ]);
 
         var options = {
-          title: 'University of Colorado Boulder Student Population',
+          
           curveType: 'function',
           legend: { position: 'bottom' }
         };
@@ -75,7 +75,7 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav n_left">
         <li><a href="{{ url_for('home') }}">Home</a></li>
-        <li ><a href="#">Property Details</a></li>
+        <li ><a href="{{ url_for('browse') }}">Browse Properties</a></li>
         <li><a href="#">Project Description</a></li>
        
       </ul>
@@ -102,7 +102,7 @@
       <!-- START INDEX MAIN CARD-->
       <div class="index_card" style="border: solid 1px black; border-radius: 5px;" >
 
-        <div class="Details" style="width: 95%; height: 400px;  padding: 15px; border: 1px solid black; margin-top: 10px; margin-left: 2.5%; border-radius: 5px;">
+        <div class="Details" style="width: 95%; height: 380px;  padding: 15px; border: 1px solid black; margin-top: 10px; margin-left: 2.5%; border-radius: 5px;">
           <div class="row">
             <div class="col-sm-3" style="margin-top: 70px;">
               <img src="../static/img/Home_img/{{ content[0].zillow_id }}.jpg" height="200" width="250">
@@ -157,15 +157,72 @@
 
        <div class="Charts" style="width: 95%; height: 350px;   border: 1px solid black; margin-top: 10px; margin-left: 2.5%; border-radius: 5px;margin-bottom: 30px;">
           <div class="row">
-            <div class="col-md-6" style="margin-top: 10px;">
-              <div id="curve_chart" style="width: 600px; height: 300px"></div>
+            <div class="col-md-6" style="margin-top: 10px;text-align: center;">
+              
+              <h4 style="margin-left: 40px; margin-top: 15px;">University of Colorado Boulder Student Population</h4>
+              <div id="curve_chart" style="width: 600px; height: 300px;margin-top: -10px;"></div>
             </div>
             <div class="col-sm-6" style="margin-top: 20px; text-align: center;">
-              <h4>Zestiamte Change | Past 10 years</h4>
+              <h4>Zestimate Change | Past 10 years</h4>
               <img src="../static/img/Zes_img/{{ content[0].zillow_id }}.jpg" height="275" width="450">
             </div>
           </div>
       </div>
+
+      <div class="A_score" style="width: 95%; height: 350px;   border: 1px solid black; margin-top: 10px; margin-left: 2.5%; border-radius: 5px;margin-bottom: 30px;">
+          <div class="row">
+            <h3>Antoku Score</h3>
+            <div class="col-md-6" style="margin-top: 10px; margin-left: -35px;">
+              
+              <img src="../static/img/A_score_{{ content[0].AScore }}.png" height="255" width="550">
+            </div>
+            <div class="col-sm-6" style="margin-top: 40px; text-align: center; margin-left: 30px; color: grey;">
+              <h4 style="">The Antoku Score is created to help investor better identify potential property investments. This score is generated utilizing the K-means machine learning algorithm. The homes expected rent per month and the homes distance from the University of Colorado strongly determine which Antoku score the home will recieve. </h4>
+            </div>
+          </div>
+      </div>
+      <div class="LocationLoc" style="width: 95%; height: 350px;   border: 1px solid black; margin-top: 10px; margin-left: 2.5%; border-radius: 5px;margin-bottom: 30px;">
+          <div class="row">
+            <h3>Location Location Location </h3>
+            <div class="col-md-6" style="margin-top: 10px; margin-left: -35px;">
+                <div id="map" style="height: 220px; width: 400px; margin-left: 80px;"></div>
+            </div>
+            <div class="col-sm-6" style="margin-top: 80px; text-align: center; margin-left: 30px; color: grey;">
+              <h4 style="">Location, location, location. At the end of the day everything comes down to location. The Antoku Score looks at the location of the potential investment and distance that location is from the University of Colorado Boulder</h4>
+            </div>
+          </div>
+      </div>
+      <div class="Investment" style="width: 95%; height: 350px;   border: 1px solid black; margin-top: 10px; margin-left: 2.5%; border-radius: 5px;margin-bottom: 30px;">
+          <div class="row">
+            <h3>Investment Details </h3>
+            <div class="col-md-6" style="margin-top: -20px; margin-left: -35px;">
+                <div class="row">
+                  <h4 style="margin-left: 80px; ">Current Investors :</h4>
+                <div class="col-sm-3"style="margin-top: 10px; margin-left: 90px; border: 1px solid black; height: 190px; border-radius: 5px;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                  <h4 style="color: #3e85ef">25%<h4>
+                    <img src="../static/img/FemaleIcon.png" height="105px;" width="100px;">
+                    <h4>Marry</h4>
+                </div>
+                 <div class="col-sm-3"style="margin-top: 10px; margin-left: 10px; border: 1px solid black; height: 190px; border-radius: 5px;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                   <h4 style="color: #3e85ef">20%<h4>
+                    <img src="../static/img/MaleIcon.png" height="100px;" width="100px;">
+                    <h4>Francisco</h4>
+                </div>
+                 <div class="col-sm-3"style="margin-top: 10px; margin-left: 10px; border: 1px solid black; height: 190px; border-radius: 5px;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                   <h4 style="color: #3e85ef">10%<h4>
+                    <img src="../static/img/MaleIcon.png" height="100px;" width="100px;">
+                    <h4>John</h4>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-6" style="margin-top: 80px; text-align: center; margin-left: 30px; color: grey;">
+              <h4 style="">Location, location, location. At the end of the day everything comes down to location. The Antoku Score looks at the location of the potential investment and distance that location is from the University of Colorado Boulder</h4>
+            </div>
+          </div>
+      </div>
+
+
+
       </div>
       <!-- END INDEX MAIN CARD-->
           
@@ -182,7 +239,58 @@
 
   <p>Antoku created by: Michael Wegner | Daniel Zhou | Josh Aguilar </p>
 </footer>
+<script type="text/javascript">
 
+
+  function initMap() {
+    
+    
+    
+    
+    var locations = '{{content}}';
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 13,
+
+      center: new google.maps.LatLng(40.015, -105.27)
+      
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker;
+    
+
+    var i= 1;
+
+    {% for c in content %}
+
+        var icon_out= 'https://raw.githubusercontent.com/Concept211/Google-Maps-Markers/master/images/marker_blue'+i+'.png';
+        i++;
+        LAT_LNG={lat: parseFloat('{{ c.LNG }}'), lng: parseFloat('{{ c.LAT }}') },
+        marker = new google.maps.Marker({
+          animation: google.maps.Animation.DROP,
+          position: new google.maps.LatLng(LAT_LNG),
+          map: map,
+          title: '{{c.street_address}}',
+          icon: icon_out
+        });
+    {% endfor %}
+    var myLatLng = {lat: 40.007, lng: -105.27};
+     var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'CU'
+        });
+  }
+
+
+</script>
+</script>
+
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0IuivzVdNQnYQ0kIcZ7x_an7bJ7BwC3o&callback=initMap">
+</script>
 
 </body>
 </html>

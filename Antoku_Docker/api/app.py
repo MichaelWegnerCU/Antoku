@@ -50,11 +50,13 @@ def browse():
     ################################
     ##Testing Index
     content = all_data
+    z=0
     y=1
     for x in content:
-        x["AScore"] = (a_scores[y-1])+1
+        x["AScore"] = 4-(a_scores[z])
         x["index"] = y
         
+        z+=1
         y+=1
      
     #return render_template('test_temp.html', content=content)
@@ -81,6 +83,7 @@ def search():
 @app.route('/details', methods=['GET'])
 def details():
     zillow_id =str(request.args.get('zwi'))
+    a_score =str(request.args.get('a_s'))
     conn = sqlite.connect('../data/OnlyComp.db')
     conn.row_factory = dict_factory
     cur = conn.cursor()
@@ -88,6 +91,9 @@ def details():
         
     all_data = cur.execute(query).fetchall()
     content=all_data
+ 
+    content[0]["AScore"] = a_score
+     
     return render_template('details.html',content=content)
 
 #@app.route('/search', methods=['GET'])
