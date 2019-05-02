@@ -56,7 +56,7 @@ class getUser(Resource):
 class getComp(Resource):
     def get(self,zpid):
         pid = zpid
-        zws_id= "X1-ZWz1h11b99c5qj_7kib9"
+        zws_id= ""
         rentzestimate = True
         count = 10
         PARAMS = {'zws-id':zws_id,'zpid':pid,'unit-type': "dollar", 'width':400, 'height': 250, 'chartDuration':"10years"}

@@ -5,7 +5,7 @@ from pyzillow.pyzillow import ZillowWrapper, GetDeepSearchResults,GetUpdatedProp
 import csv, sqlite3
 
 def generate_Comp_fields_txt():
-	zws_id= "X1-ZWz1h11b99c5qj_7kib9"
+	zws_id= ""
 
 	f_name = open("UpdatedHomeLatLong.txt", "r")
 

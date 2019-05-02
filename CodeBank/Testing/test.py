@@ -4,7 +4,7 @@ from collections import OrderedDict
 import xmltodict
 import csv, sqlite3
 
-zws_id= "X1-ZWz1h11b99c5qj_7kib9"
+zws_id= ""
 zpid = 2121254219
 rentzestimate = True
 count = 10
