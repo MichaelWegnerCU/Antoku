@@ -1,7 +1,7 @@
 import re
 from pyzillow.pyzillow import ZillowWrapper, GetDeepSearchResults,GetUpdatedPropertyDetails
 
-zws_id= "X1-ZWz1h11b99c5qj_7kib9"
+
 
 f_name = open("CompleteAddress.txt", "r")
 data_base= open("UpdatedHomeLatLong.txt","+w")

@@ -6,7 +6,7 @@ Address_out= open("CompleteAddress.txt","w+")
 # # print(f.read())
 #for address in file_name:
 
-gmaps = Client("AIzaSyC0IuivzVdNQnYQ0kIcZ7x_an7bJ7BwC3o")
+
 
 # 
 # #print(result)
