@@ -2,7 +2,7 @@ from googlemaps import Client
 
 address = '1934 18th St, Boulder, CO'
 
-gmaps = Client("AIzaSyC0IuivzVdNQnYQ0kIcZ7x_an7bJ7BwC3o")
+gmaps = Client("")
 
 result = gmaps.geocode(address)
 #print(result)

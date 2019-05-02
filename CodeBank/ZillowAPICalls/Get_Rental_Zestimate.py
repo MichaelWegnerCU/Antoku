@@ -2,7 +2,7 @@ import requests
 import xmltodict
 from pyzillow.pyzillow import ZillowWrapper, GetDeepSearchResults,GetUpdatedPropertyDetails
 from collections import OrderedDict
-zws_id= "X1-ZWz1h11b99c5qj_7kib9"
+zws_id= ""
 
 address = '890 18th St Boulder, CO 80302'
 zipcode = '80302'

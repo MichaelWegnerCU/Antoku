@@ -10,7 +10,7 @@ import requests
 import xmltodict
 from pyzillow.pyzillow import ZillowWrapper, GetDeepSearchResults,GetUpdatedPropertyDetails
 from collections import OrderedDict
-ZILLOW_API_KEY= "X1-ZWz1h11b99c5qj_7kib9"
+ZILLOW_API_KEY= ""
 
 address = '890 18th St Boulder, CO 80302'
 zipcode = '80302'
